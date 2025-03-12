@@ -1,0 +1,35 @@
+@import "tailwindcss";
+#app {
+  display: grid;
+  grid-template-areas: "aside main main" "player player player";
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: 1fr auto;
+}
+html {
+  font-family: "CircularStd", sans-serif;
+  background: #000000;
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("/public/fonts/CircularStd-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("/public/fonts/CircularStd-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("/public/fonts/CircularStd-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
